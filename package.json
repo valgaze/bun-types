@@ -4,11 +4,17 @@
   "private": true,
   "repository": "https://github.com/oven-sh/bun-types",
   "scripts": {
+    "npm:docs:only": "rm -rf api-docs 2>/dev/null && npx --yes typedoc --media images --plugin typedoc-plugin-markdown --out api-docs --tsconfig tsconfig.docs.json ./dist/types.d.ts",
+    "npm:docs": "npm run generate && npm run docs:only",
+    "docs:only": "rm -rf api-docs 2>/dev/null && npx --yes typedoc --media images --plugin typedoc-plugin-markdown --out api-docs --tsconfig tsconfig.docs.json ./dist/types.d.ts",
+    "docs": "bun run generate && bun run docs:only",
     "generate": "rm -rf ./dist && bun bundle.ts ./dist && prettier --write ./dist/types.d.ts",
     "prepublishOnly": "bun generate",
     "fmt": "prettier --write *.d.ts"
   },
   "devDependencies": {
-    "prettier": "latest"
+    "prettier": "latest",
+    "typedoc": "^0.23.9",
+    "typedoc-plugin-markdown": "^3.13.4"
   }
 }

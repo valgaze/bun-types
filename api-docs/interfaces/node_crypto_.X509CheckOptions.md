@@ -1,0 +1,95 @@
+[bun-types](../README.md) / [Exports](../modules.md) / ["node:crypto"](../modules/node_crypto_.md) / X509CheckOptions
+
+# Interface: X509CheckOptions
+
+["node:crypto"](../modules/node_crypto_.md).X509CheckOptions
+
+## Table of contents
+
+### Properties
+
+- [multiLabelWildcards](node_crypto_.X509CheckOptions.md#multilabelwildcards)
+- [partialWildcards](node_crypto_.X509CheckOptions.md#partialwildcards)
+- [singleLabelSubdomains](node_crypto_.X509CheckOptions.md#singlelabelsubdomains)
+- [subject](node_crypto_.X509CheckOptions.md#subject)
+- [wildcards](node_crypto_.X509CheckOptions.md#wildcards)
+
+## Properties
+
+### multiLabelWildcards
+
+• **multiLabelWildcards**: `boolean`
+
+**`Default`**
+
+false
+
+#### Defined in
+
+[crypto.d.ts:3640](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L3640)
+
+[dist/types.d.ts:19659](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L19659)
+
+___
+
+### partialWildcards
+
+• **partialWildcards**: `boolean`
+
+**`Default`**
+
+true
+
+#### Defined in
+
+[crypto.d.ts:3636](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L3636)
+
+[dist/types.d.ts:19655](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L19655)
+
+___
+
+### singleLabelSubdomains
+
+• **singleLabelSubdomains**: `boolean`
+
+**`Default`**
+
+false
+
+#### Defined in
+
+[crypto.d.ts:3644](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L3644)
+
+[dist/types.d.ts:19663](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L19663)
+
+___
+
+### subject
+
+• **subject**: ``"always"`` \| ``"never"``
+
+**`Default`**
+
+'always'
+
+#### Defined in
+
+[crypto.d.ts:3628](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L3628)
+
+[dist/types.d.ts:19647](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L19647)
+
+___
+
+### wildcards
+
+• **wildcards**: `boolean`
+
+**`Default`**
+
+true
+
+#### Defined in
+
+[crypto.d.ts:3632](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L3632)
+
+[dist/types.d.ts:19651](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L19651)

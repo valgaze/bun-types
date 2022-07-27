@@ -1,0 +1,66 @@
+[bun-types](../README.md) / [Exports](../modules.md) / ["stream"](../modules/stream_.md) / FinishedOptions
+
+# Interface: FinishedOptions
+
+["stream"](../modules/stream_.md).FinishedOptions
+
+## Hierarchy
+
+- [`Abortable`](events_.EventEmitter.Abortable.md)
+
+  ↳ **`FinishedOptions`**
+
+## Table of contents
+
+### Properties
+
+- [error](stream_.FinishedOptions.md#error)
+- [readable](stream_.FinishedOptions.md#readable)
+- [signal](stream_.FinishedOptions.md#signal)
+- [writable](stream_.FinishedOptions.md#writable)
+
+## Properties
+
+### error
+
+• `Optional` **error**: `boolean`
+
+#### Defined in
+
+[stream.d.ts:1043](https://github.com/valgaze/bun-types/blob/5e53f27/stream.d.ts#L1043)
+
+___
+
+### readable
+
+• `Optional` **readable**: `boolean`
+
+#### Defined in
+
+[stream.d.ts:1044](https://github.com/valgaze/bun-types/blob/5e53f27/stream.d.ts#L1044)
+
+___
+
+### signal
+
+• `Optional` **signal**: [`AbortSignal`](../modules.md#abortsignal)
+
+When provided the corresponding `AbortController` can be used to cancel an asynchronous action.
+
+#### Inherited from
+
+[Abortable](events_.EventEmitter.Abortable.md).[signal](events_.EventEmitter.Abortable.md#signal)
+
+#### Defined in
+
+[events.d.ts:639](https://github.com/valgaze/bun-types/blob/5e53f27/events.d.ts#L639)
+
+___
+
+### writable
+
+• `Optional` **writable**: `boolean`
+
+#### Defined in
+
+[stream.d.ts:1045](https://github.com/valgaze/bun-types/blob/5e53f27/stream.d.ts#L1045)

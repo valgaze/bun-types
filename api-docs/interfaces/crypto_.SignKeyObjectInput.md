@@ -1,0 +1,84 @@
+[bun-types](../README.md) / [Exports](../modules.md) / ["crypto"](../modules/crypto_.md) / SignKeyObjectInput
+
+# Interface: SignKeyObjectInput
+
+["crypto"](../modules/crypto_.md).SignKeyObjectInput
+
+## Hierarchy
+
+- [`SigningOptions`](crypto_.SigningOptions.md)
+
+  ↳ **`SignKeyObjectInput`**
+
+## Table of contents
+
+### Properties
+
+- [dsaEncoding](crypto_.SignKeyObjectInput.md#dsaencoding)
+- [key](crypto_.SignKeyObjectInput.md#key)
+- [padding](crypto_.SignKeyObjectInput.md#padding)
+- [saltLength](crypto_.SignKeyObjectInput.md#saltlength)
+
+## Properties
+
+### dsaEncoding
+
+• `Optional` **dsaEncoding**: [`DSAEncoding`](../modules/crypto_.md#dsaencoding)
+
+#### Inherited from
+
+[SigningOptions](crypto_.SigningOptions.md).[dsaEncoding](crypto_.SigningOptions.md#dsaencoding)
+
+#### Defined in
+
+[crypto.d.ts:1360](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L1360)
+
+[dist/types.d.ts:17379](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L17379)
+
+___
+
+### key
+
+• **key**: [`KeyObject`](../classes/crypto_.KeyObject.md)
+
+#### Defined in
+
+[crypto.d.ts:1364](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L1364)
+
+[dist/types.d.ts:17383](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L17383)
+
+___
+
+### padding
+
+• `Optional` **padding**: `number`
+
+**`See`**
+
+crypto.constants.RSA_PKCS1_PADDING
+
+#### Inherited from
+
+[SigningOptions](crypto_.SigningOptions.md).[padding](crypto_.SigningOptions.md#padding)
+
+#### Defined in
+
+[crypto.d.ts:1358](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L1358)
+
+[dist/types.d.ts:17377](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L17377)
+
+___
+
+### saltLength
+
+• `Optional` **saltLength**: `number`
+
+#### Inherited from
+
+[SigningOptions](crypto_.SigningOptions.md).[saltLength](crypto_.SigningOptions.md#saltlength)
+
+#### Defined in
+
+[crypto.d.ts:1359](https://github.com/valgaze/bun-types/blob/5e53f27/crypto.d.ts#L1359)
+
+[dist/types.d.ts:17378](https://github.com/valgaze/bun-types/blob/5e53f27/dist/types.d.ts#L17378)
