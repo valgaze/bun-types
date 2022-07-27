@@ -4,6 +4,10 @@
   "private": true,
   "repository": "https://github.com/oven-sh/bun-types",
   "scripts": {
+    "tidy": "rm -rf api-docs",
+    "hack3": "cp README_top.md README.md && concat-md --decrease-title-levels --dir-name-as-title api-docs >> README.md",
+    "hack2": "merge-markdown -m ./api-docs/modules.md --output bongo.md",
+    "singledoc": "concat-md --ignore README.md --toc --dec rease-title-levels --dir-name-as-title api-docs >> bongo.md",
     "docs": "bun run generate:package && typedoc",
     "generate:package": "rm -rf ./dist && bun scripts/bundle.ts ./dist && prettier --write ./dist/types.d.ts",
     "generate:githubstuff": "bun scripts/generate.ts",
@@ -16,11 +20,12 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
+    "concat-md": "^0.4.0",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "latest",
-    "typescript": "^4.7.4",
     "typedoc": "^0.23.9",
-    "typedoc-plugin-markdown": "^3.13.4"
+    "typedoc-plugin-markdown": "^3.13.4",
+    "typescript": "^4.7.4"
   }
 }
