@@ -4,6 +4,7 @@
   "private": true,
   "repository": "https://github.com/oven-sh/bun-types",
   "scripts": {
+    "docs": "bun run generate:package && typedoc",
     "generate:package": "rm -rf ./dist && bun scripts/bundle.ts ./dist && prettier --write ./dist/types.d.ts",
     "generate:githubstuff": "bun scripts/generate.ts",
     "prepublishOnly": "bun generate:package",
@@ -18,6 +19,8 @@
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "latest",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "typedoc": "^0.23.9",
+    "typedoc-plugin-markdown": "^3.13.4"
   }
 }
